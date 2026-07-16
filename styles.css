@@ -110,6 +110,13 @@ svg {
   border-bottom-color: var(--red);
 }
 
+.header-actions {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .header-action,
 .button {
   display: inline-flex;
@@ -133,10 +140,32 @@ svg {
   padding: 11px 15px;
 }
 
+.ifood-action {
+  width: 86px;
+  background: var(--red);
+  padding: 8px 12px;
+}
+
+.ifood-action img {
+  width: 54px;
+  height: auto;
+}
+
+.whatsapp-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
 .header-action:hover,
 .button.primary:hover,
 .floating-whatsapp:hover {
   background: #078553;
+}
+
+.ifood-action:hover,
+.ifood-action:focus-visible {
+  background: #b71c22;
 }
 
 .button.primary {
@@ -513,6 +542,16 @@ h1 {
   background: var(--navy);
 }
 
+.contact-row .contact-icon {
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  object-fit: contain;
+  border-radius: 6px;
+  background: var(--navy);
+  flex: 0 0 auto;
+}
+
 .contact-row small,
 .contact-row strong {
   display: block;
@@ -646,6 +685,15 @@ h1 {
   height: 28px;
 }
 
+.ifood-social {
+  width: 68px;
+}
+
+.ifood-social img {
+  width: 62px;
+  height: auto;
+}
+
 .footer-top {
   white-space: nowrap;
 }
@@ -666,9 +714,10 @@ h1 {
   border: 2px solid #fff;
 }
 
-.floating-whatsapp svg {
-  width: 30px;
-  height: 30px;
+.floating-whatsapp img {
+  width: 31px;
+  height: 31px;
+  object-fit: contain;
 }
 
 @media (max-width: 980px) {
@@ -682,7 +731,7 @@ h1 {
   }
 
   .site-nav,
-  .header-action {
+  .header-actions {
     display: none;
   }
 
