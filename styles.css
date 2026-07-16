@@ -722,17 +722,38 @@ h1 {
 
 @media (max-width: 980px) {
   .site-header {
-    grid-template-columns: auto auto;
-    justify-content: space-between;
+    grid-template-columns: auto 1fr auto;
+    gap: 12px;
   }
 
   .nav-toggle {
+    grid-column: 3;
+    justify-self: end;
     display: grid;
   }
 
-  .site-nav,
-  .header-actions {
+  .site-nav {
     display: none;
+  }
+
+  .header-actions {
+    grid-column: 2;
+    justify-self: end;
+    display: flex;
+  }
+
+  .whatsapp-action {
+    display: none;
+  }
+
+  .ifood-action {
+    width: 78px;
+    min-height: 38px;
+    padding: 7px 10px;
+  }
+
+  .ifood-action img {
+    width: 50px;
   }
 
   .site-nav.is-open {
